@@ -1,6 +1,6 @@
 {
   "name": "webgl-gpu-rating",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate a unique hash for the GPU in usage",
   "main": "index.js",
   "scripts": {
