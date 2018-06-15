@@ -3,7 +3,7 @@
 var sha256 = require('./sha256.js');
 
 module.exports = {
-  getGpuRating: function (canvas) {
+  getGpuHash: function () {
     var canvas = document.createElement('canvas');
     canvas.height = 128;
     canvas.width = 256;
@@ -42,5 +42,9 @@ module.exports = {
     context.readPixels(0, 0, 256, 128, context.RGBA, context.UNSIGNED_BYTE, pixels);
 
     return sha256(JSON.stringify(pixels).replace(/,?"[0-9]+":/g, ''))
+  },
+
+  getGpuRating: function () {
+    return 'Work in progress... 😁'
   }
 };
